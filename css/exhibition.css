@@ -1,0 +1,173 @@
+.exhibition {
+    background: linear-gradient(
+        180deg,
+        #3a106f 0%,
+        #03085c 100%
+    );
+
+    padding: 30px 0 0px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+
+
+.exhibition__title {
+    color: #fff;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 35px;
+    margin-top: 40px;
+}
+
+
+
+.exhibition__cards {
+    display: flex;
+
+    gap: 20px;
+
+    overflow-x: auto;
+
+    scrollbar-width: none;
+    
+}
+
+.exhibition__cards::-webkit-scrollbar {
+    display: none;
+}
+
+
+.exhibition__card {
+    width: 300px;
+    height: 300px;
+
+    background: #d8c3f4;
+
+    border-radius: 25px;
+
+    padding: 40px 30px;
+
+    border: 2px solid #3a106f;
+
+    flex-shrink: 0;
+
+    
+  
+}
+
+
+
+
+
+.exhibition__card img {
+    width: 55px;
+    height: 55px;
+
+    margin-bottom: 25px;
+}
+
+
+
+.exhibition__card h3 {
+    color: #28115d;
+
+    font-size: 17px;
+    line-height: 1.4;
+
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+.exhibition__card p {
+    color: #28115d;
+
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.exhibition__card h3,
+.exhibition__card p {
+    white-space: normal;
+    word-wrap: break-word;
+    line-height: 1.5;
+}
+
+
+
+
+.arrow {
+    width: 50px;
+    height: 50px;
+
+    border-radius: 50%;
+    cursor: pointer;
+
+    font-size: 32px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: 0.3s;
+}
+
+.arrow--left {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+.arrow--right {
+    background: white;
+    color: #28115d;
+    border: none;
+}
+
+.arrow:hover {
+    transform: scale(1.08);
+}
+.exhibition__bottom {
+    position: relative;
+    background-color: white;
+    width: 100%;
+    height: 184px;
+
+    overflow: hidden;
+}
+
+
+
+.exhibition__shape {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 164px;
+
+    object-fit: cover;
+}
+
+
+
+.exhibition__navigation {
+    position: relative;
+
+    z-index: 2;
+
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+    height: 100%;
+    align-items: center;
+}

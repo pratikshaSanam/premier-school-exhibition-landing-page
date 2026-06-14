@@ -1,0 +1,106 @@
+
+.choose-school {
+    padding: 80px 0;
+    background: #ffffff;
+}
+
+
+.choose-school__title {
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+    color: #2C0D58;
+    margin-bottom: 50px;
+}
+
+
+
+
+.choose-school__cards {
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    margin-left: 40px;
+    margin-right: 40px;
+
+}
+
+
+
+
+.choose-school__card {
+
+    position: relative;
+    height: 350px;
+    border-radius: 24px;
+    overflow: hidden;
+    cursor: pointer;
+
+    
+
+}
+
+.choose-school__card img {
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+
+}
+
+
+
+.choose-school__card::after {
+
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background:
+    linear-gradient(
+        180deg,
+        rgba(0,0,0,0) 40%,
+        rgba(0,0,0,0.85) 100%
+    );
+
+}
+
+
+/* Text content */
+
+.choose-school__content {
+
+    position: absolute;
+    bottom: 30px;
+    left: 24px;
+    right: 24px;
+
+    color: #ffffff;
+
+    z-index: 1;
+
+}
+
+
+.choose-school__content h3 {
+
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.4;
+
+    margin-bottom: 12px;
+
+}
+
+
+.choose-school__content p {
+
+    font-size: 14px;
+    line-height: 1.5;
+
+    color: rgba(255,255,255,0.9);
+
+}
